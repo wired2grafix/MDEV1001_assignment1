@@ -25,8 +25,10 @@ db.serialize(function() {
         
     db.each("SELECT Classroom.Room_number, Classroom.Building FROM Classroom \
     WHERE Classroom.Capacity > 50",function(err,row){
+        if(err)
+        console.log(err);
 
-        console.log(row);
+        //console.log(row);
 
     });
 });
