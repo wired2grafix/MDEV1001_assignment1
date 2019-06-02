@@ -23,12 +23,12 @@ db.serialize(function() {
 
     //Print the room number and building name for those rooms whose capacity is greater than 50
         
-    db.each("SELECT Classroom.Room_number, Classroom.Building FROM Classroom \
+/*     db.each("SELECT Classroom.Room_number, Classroom.Building FROM Classroom \
     WHERE Classroom.Capacity > 50",function(err,row){
         if(err)
         console.log(err);
 
-        //console.log(row);
+        console.log(row);
 
-    });
+    }); */
 });
